@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>Example</PageTitle>
+
+<h1>International Phone Number Input</h1>
+
+<div class="mb-3">
+    <InternationalPhoneNumber Id="InternationalPhone1" Class="form-control" @bind-BindingValue="_internationalPhone"></InternationalPhoneNumber>
+</div>
+
+<div class="mb-3">
+    <InternationalPhoneNumber Id="InternationalPhone2" Class="form-control" Change="@((e => UpdateDynamicDataPhone(e, 1)))"></InternationalPhoneNumber>
+</div>
+@code{
+
+
+    private string _internationalPhone = "";
+
+    private string _internationalPhone2 = "";
+
+    private async Task UpdateDynamicDataPhone(string e, int someUsefulValue)
+    {
+        //do something that requires async here with the someUsefulValue
+
+        _internationalPhone2 = e;
+    }
+}
