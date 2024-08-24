@@ -9,7 +9,7 @@ A simple and customizable Blazor input for phone numbers.
   - Flag images and dial codes for each country
   
     
-## Getting Started (Using a CDN)
+## Getting Started
 1. Add the CSS
   ```html
   <link href="css/international-telephone-input.css" rel="stylesheet" />
