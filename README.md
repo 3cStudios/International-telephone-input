@@ -1,4 +1,4 @@
-# Intl Phone Number Input
+# International Phone Number Input
 
 A simple and customizable Blazor input for phone numbers.
 
